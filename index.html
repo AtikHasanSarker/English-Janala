@@ -135,11 +135,18 @@
     <section class="flex justify-center items-center my-10 p-5">
       <div class="join">
         <div>
-            <label class="input validator join-item">
-                <input id="input-search" type="text" placeholder="Search Your Vocabulary" required />
-            </label>
+          <label class="input validator join-item">
+            <input
+              id="input-search"
+              type="text"
+              placeholder="Search Your Vocabulary"
+              required
+            />
+          </label>
         </div>
-        <button id="btn-search" class="btn btn-primary join-item">Search</button>
+        <button id="btn-search" class="btn btn-primary join-item">
+          Search
+        </button>
       </div>
     </section>
 
@@ -151,7 +158,7 @@
     <!-- Word Container  -->
     <section
       id="word-container"
-      class="bg-gray-100 p-2.5 md:p-10 w-11/12 mx-auto my-10 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[30px] rounded-3xl"
+      class="bg-gray-100 p-2.5 md:p-10 w-11/12 mx-auto mt-10 mb-10 md:mb-[200px] grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[30px] rounded-3xl"
     >
       <div class="col-span-3 text-center">
         <p class="font-bangla text-[#79716B] text-[14px] mb-3">
@@ -178,6 +185,74 @@
         </div>
       </dialog>
     </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="w-11/12 mx-auto">
+      <div class="text-center">
+        <h2 class="font-bold text-5xl">
+          <span class="text-[#00BCFF]">Frequently</span> Asked Questions
+        </h2>
+      </div>
+      <div class="space-y-[20px] my-10 md:my-[80px]">
+        <div class="bg-[#F8F8F8] rounded-2xl px-[11px] py-4 space-y-[13px]">
+          <h4 class="font-medium text-[#18181B]">
+            1. How can I start learning English on this website?
+          </h4>
+          <p class="text-[#62748E]">
+            You can start by exploring our beginner lessons, interactive
+            exercises, and quizzes. We also offer structured courses to guide
+            you step by step.
+          </p>
+        </div>
+        <div class="bg-[#F8F8F8] rounded-2xl px-[11px] py-4">
+          <h4 class="font-medium text-[#18181B]">
+            2. Is this website free to use?
+          </h4>
+        </div>
+        <div class="bg-[#F8F8F8] rounded-2xl px-[11px] py-4">
+          <h4 class="font-medium text-[#18181B]">
+            3. Do I need to create an account?
+          </h4>
+        </div>
+        <div class="bg-[#F8F8F8] rounded-2xl px-[11px] py-4">
+          <h4 class="font-medium text-[#18181B]">
+            4. How can I build my English vocabulary?
+          </h4>
+        </div>
+        <div class="bg-[#F8F8F8] rounded-2xl px-[11px] py-4">
+          <h4 class="font-medium text-[#18181B]">
+            5. Do you offer certificates for completed courses?
+          </h4>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#EDF6FF] mt-10 md:mt-[200px]">
+      <div class="w-11/12 mx-auto py-5 md:py-[80px] flex justify-between items-center">
+        <div>
+          <a class="flex items-center gap-2 mb-[20px]">
+            <span class="font-semibold text-[20px]">English</span>
+            <img src="./assets/logo.png" alt="" />
+            <span class="font-bangla text-[20px]">জানালা</span>
+          </a>
+          <p class="text-[#62748E] font-bangla mb-2">ইংরেজি শিখুন সহজে</p>
+          <p class="text-[#62748E]">
+            Providing ED-Tech Applications since 2025
+          </p>
+        </div>
+
+        <div>
+          <p class="text-[#62748E] mb-4 font-bold">
+            Follow Us
+          </p>
+          <div class="flex gap-4">
+            <img src="./assets/fb-thumb.png" alt="">
+            <img src="./assets/youtube-thumb.png" alt="">
+            <img src="./assets/instagram-thumb.png" alt="">
+            <img src="./assets/github-thumb.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
