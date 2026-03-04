@@ -73,10 +73,10 @@ const displayLevelWord = (words) => {
     words.forEach((word) => {
         const card = document.createElement('div')
         card.innerHTML = `
-        <div class="bg-white p-[56px] text-center space-y-3 rounded-xl shadow-sm h-full">
-            <h2 class="font-bold md text-[24px]:text-[32px]">${word.word ? word.word : "শব্দটি পাওয়া যায়নি"}</h2>
-            <p class="font-medium text-[20px]">Meaning /Pronounciation</p>
-            <div class="font-bangla font-semibold text-[24px] md:text-[32px]">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"} / ${word.pronunciation ? word.pronunciation : "উচ্চারণ পাওয়া যায়নি"}"</div>
+        <div class="bg-white p-4 md:p-[56px] text-center space-y-3 rounded-xl shadow-sm h-full">
+            <h2 class="font-bold text-[20px] md:text-[32px]">${word.word ? word.word : "শব্দটি পাওয়া যায়নি"}</h2>
+            <p class="font-medium md:text-[20px]">Meaning /Pronounciation</p>
+            <div class="font-bangla font-semibold md:text-[32px]">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"} / ${word.pronunciation ? word.pronunciation : "উচ্চারণ পাওয়া যায়নি"}"</div>
             <div class="flex justify-between  mt-auto">
                 <button onclick = "loadWordDetail(${word.id})" class="btn btn-soft bg-[#1a91ff1a] rounded-md hover:bg-[#1a91ff80]"><i class="fa-solid fa-circle-info"></i></button>
                 <button onclick = "pronounceWord('${word.word}')" class="btn btn-soft bg-[#1a91ff1a] rounded-md hover:bg-[#1a91ff80]"><i class="fa-solid fa-volume-high"></i></button>
