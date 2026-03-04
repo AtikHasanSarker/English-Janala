@@ -12,7 +12,7 @@ const displayLessons = (lessons) => {
     lessons.forEach(lesson => {
         const div = document.createElement('div');
         div.innerHTML = `
-        <button id = "lesson-btn-${lesson.level_no}" onclick= "loadLevelWord(${lesson.level_no})" href="" class="lesson-btn btn btn-outline btn-primary"
+        <button id = "lesson-btn-${lesson.level_no}" onclick= "loadLevelWord(${lesson.level_no}); document.getElementById('input-search').value = ''" href="" class="lesson-btn btn btn-outline btn-primary"
             ><i class="fa-solid fa-book-open"></i> Lesson ${lesson.level_no}</button
           >
         `;
@@ -57,7 +57,6 @@ const loadLevelWord = (id) => {
 const displayLevelWord = (words) => {
     const wordContainer = document.getElementById('word-container');
     wordContainer.innerHTML = '';
-
     if(words.length == 0){
         wordContainer.innerHTML = `
         <div class="col-span-3 text-center space-y-4">
