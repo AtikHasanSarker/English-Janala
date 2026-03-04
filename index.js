@@ -63,7 +63,7 @@ const displayLevelWord = (words) => {
         <div class="col-span-3 text-center space-y-4">
             <img src = "./assets/alert-error.png"/ class = "mx-auto">
             <p class="font-bangla text-[#79716B] text-[14px]">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
-            <h2 class="font-bangla text-[#292524] text-[34px]">নেক্সট Lesson এ যান</h2>
+            <h2 class="font-bangla text-[#292524] text-2xl md:text-[34px]">নেক্সট Lesson এ যান</h2>
         </div>
         `;
         manageSpinner(false);
@@ -74,9 +74,9 @@ const displayLevelWord = (words) => {
         const card = document.createElement('div')
         card.innerHTML = `
         <div class="bg-white p-[56px] text-center space-y-3 rounded-xl shadow-sm h-full">
-            <h2 class="font-bold text-[32px]">${word.word ? word.word : "শব্দটি পাওয়া যায়নি"}</h2>
+            <h2 class="font-bold md text-[24px]:text-[32px]">${word.word ? word.word : "শব্দটি পাওয়া যায়নি"}</h2>
             <p class="font-medium text-[20px]">Meaning /Pronounciation</p>
-            <div class="font-bangla font-semibold text-[32px]">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"} / ${word.pronunciation ? word.pronunciation : "উচ্চারণ পাওয়া যায়নি"}"</div>
+            <div class="font-bangla font-semibold text-[24px] md:text-[32px]">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"} / ${word.pronunciation ? word.pronunciation : "উচ্চারণ পাওয়া যায়নি"}"</div>
             <div class="flex justify-between  mt-auto">
                 <button onclick = "loadWordDetail(${word.id})" class="btn btn-soft bg-[#1a91ff1a] rounded-md hover:bg-[#1a91ff80]"><i class="fa-solid fa-circle-info"></i></button>
                 <button onclick = "pronounceWord('${word.word}')" class="btn btn-soft bg-[#1a91ff1a] rounded-md hover:bg-[#1a91ff80]"><i class="fa-solid fa-volume-high"></i></button>
@@ -99,18 +99,18 @@ const displayWordDetails = (word) => {
     const detailBox = document.getElementById("detail-container");
     detailBox.innerHTML = `
         <div>
-            <h2 class="font-bold text-4xl">${word.word} (<i class="fa-solid fa-microphone-lines"></i> :${word.pronunciation})</h2>
+            <h2 class="font-bold text-2xl md:text-4xl">${word.word} (<i class="fa-solid fa-microphone-lines"></i> :${word.pronunciation})</h2>
         </div>
         <div>
-            <h2 class="font-semibold text-2xl">Meaning</h2>
-            <p class="font-medium text-2xl">${word.meaning}</p>
+            <h2 class="font-semibold text-[20px] md:text-2xl">Meaning</h2>
+            <p class="font-medium text-[20px] md:text-2xl">${word.meaning}</p>
         </div>
         <div>
-            <h2 class="font-semibold text-2xl">Example</h2>
-            <p class="font-medium text-2xl">${word.sentence}</p>
+            <h2 class="font-semibold text-[20px] md:text-2xl">Example</h2>
+            <p class="font-medium text-[20px] md:text-2xl">${word.sentence}</p>
         </div>
         <div>
-            <p class="font-medium text-2xl">সমার্থক শব্দ গুলো</p>
+            <p class="font-medium text-[20px] md:text-2xl">সমার্থক শব্দ গুলো</p>
             <div class="flex gap-[18px] mt-2.5">
                 ${createElements(word.synonyms)}
             </div>
