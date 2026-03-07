@@ -86,7 +86,7 @@
           <a href="#vocabularySection" class="btn btn-outline btn-primary"
             ><i class="fa-solid fa-book-open"></i> Learn</a
           >
-          <a href="" class="btn btn-outline btn-primary"
+          <a href="./index.html" class="btn btn-outline btn-primary"
             ><i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut</a
           >
         </div>
@@ -94,31 +94,87 @@
     </header>
 
     <section
-      class="flex flex-col-reverse md:flex-row justify-between items-center w-11/12 mx-auto gap-10 mb-10 md:mb-[100px]"
+      class="flex flex-col-reverse md:flex-row justify-between items-center w-11/12 mx-auto gap-10 mb-8 md:mb-[80px]"
     >
       <div class="space-y-10 flex-1 text-center md:text-left">
         <h2 class="font-bold text-5xl">
           <span class="text-[#00BCFF]">English</span> is Easy!!
         </h2>
         <p class="font-bangla font-medium text-2xl">
-          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
-          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
-          অন্য একটি Level এ
+            <span class="text-secondary font-bold">স্বাগতম!</span> আপনার শেখার যাত্রায় আপনাকে পেয়ে আমরা আনন্দিত। প্রতিদিন একটু একটু করে নতুন শব্দ শেখা, সঠিক উচ্চারণ অনুশীলন করা এবং নিয়মিত প্র্যাকটিসের মাধ্যমেই ইংরেজিতে দক্ষ হওয়া সম্ভব। মনে রাখবেন, শেখার পথে ভুল হওয়াটা স্বাভাবিক—কারণ প্রতিটি ভুলই আপনাকে আরও ভালোভাবে শেখার সুযোগ করে দেয়। ধৈর্য, নিয়মিত অনুশীলন এবং আত্মবিশ্বাস থাকলে ইংরেজি শেখা আর কঠিন মনে হবে না। তাই আজকের এই মুহূর্ত থেকেই নতুন কিছু শেখার জন্য প্রস্তুত হোন, নিজের দক্ষতাকে আরও এক ধাপ এগিয়ে নিন, এবং প্রতিদিনের ছোট ছোট অগ্রগতিকে আপনার বড় সাফল্যের ভিত্তি বানান। 🚀📚
         </p>
-        <div>
-          <fieldset class="space-y-5">
-            <input id="inputName" type="text" class="input" placeholder="Enter Your Name" required/>
-            <br />
-            <input id="inputPass" type="password" class="input" placeholder="Enter 8 characters password"  required/>
-            <br />
-            <button id="loginBtn" onclick="loginPage(loginBtn)" class="btn btn-primary">Get Started</button>
-          </fieldset>
-        </div>
       </div>
 
       <div class="flex-1">
         <img src="./assets/hero-student.png" alt="" />
       </div>
+    </section>
+
+    <section id="vocabularySection">
+      <h2 class="font-bold text-4xl text-center mb-10">
+        <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+      </h2>
+      <div
+        id="level-container"
+        class="flex gap-5 flex-wrap justify-center"
+      ></div>
+    </section>
+
+    <!-- search  -->
+    <section class="flex justify-center items-center my-10 p-5">
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+            <input
+              id="input-search"
+              type="text"
+              placeholder="Search Your Vocabulary"
+              required
+            />
+          </label>
+        </div>
+        <button id="btn-search" class="btn btn-primary join-item">
+          Search
+        </button>
+      </div>
+    </section>
+
+    <!-- Spinner -->
+    <section id="spinner" class="flex justify-center items-center my-16 hidden">
+      <span class="loading loading-bars loading-xl"></span>
+    </section>
+
+    <!-- Word Container  -->
+    <section
+      id="word-container"
+      class="bg-gray-100 p-2.5 md:p-10 w-11/12 mx-auto mt-10 mb-10 md:mb-[100px] grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[30px] rounded-3xl"
+    >
+      <div class="col-span-3 text-center">
+        <p class="font-bangla text-[#79716B] text-[14px] mb-3">
+          আপনি এখনো কোন Lesson Select করেন নি ।
+        </p>
+        <h2 class="font-bangla text-[#292524] text-2xl md:text-[34px]">
+          একটি Lesson Select করুন।
+        </h2>
+      </div>
+    </section>
+
+    <!-- modal section  -->
+    <section>
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <!-- container -->
+          <div id="detail-container" class="space-y-5 md:space-y-8"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
 
     <!-- Frequently Asked Questions -->

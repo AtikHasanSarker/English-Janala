@@ -1,3 +1,16 @@
+function loginPage(btn){
+    const inputName = document.getElementById("inputName");
+    const inputPass = document.getElementById("inputPass");
+    console.log(inputPass.value.length);
+    if (inputName.value.length == 0 || inputPass.value.length == 0) {
+      alert("Invalid Password");
+    } else {
+      window.location.assign("home.html");
+    }
+}
+
+
+
 const loadLevel = () => {
     const url = "https://openapi.programming-hero.com/api/levels/all";
     fetch(url)
