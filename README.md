@@ -1,32 +1,72 @@
-# ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
+# 📘 English Janala
+
+🚀 A simple and interactive web application to help users learn English easily through structured lessons and a clean user interface.
+
+🔗 **Live Site:** https://atikhasansarker.github.io/English-Janala/
 
 ---
 
-## ⚡ API Endpoints
+## ✨ Features
 
-1. Get ⚡ All Levels
+* 📚 Interactive English learning system
+* 🧠 Beginner-friendly lessons
+* 🔐 Simple login form (name + password)
+* ⚡ Fast and responsive UI
+* 🎯 Clean and modern design
 
-```bash
-https://openapi.programming-hero.com/api/levels/all
-```
+---
 
-1. Get ⚡ Words by Levels <br/>
-   https:// openapi.programming-hero.com/api/level/{id}
+## 🛠️ Technologies Used
 
-```bash
-https://openapi.programming-hero.com/api/level/5
-```
+* 🧑‍💻 JavaScript
+* 🎨 Tailwind CSS
+* 🌼 Daisy UI
 
-1. Get ⚡ Words Detail <br/>
-   https:// openapi.programming-hero.com/api/word/{id}
 
-```bash
-https://openapi.programming-hero.com/api/word/5
-```
+---
 
-1. Get ⚡ All Words <br/>
+## 📸 Screenshots
 
-```bash
-https://openapi.programming-hero.com/api/words/all
-```
+<table>
+    <tr>
+        <td>
+        <img src="./assets/UI/hero.png" >
+        </td>
+        <td >
+        <img src="./assets/UI/ui.png" width="100%" style="background:white;padding:10px;">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <img src="./assets/UI/card.png" >
+        </td>
+        <td >
+        <img src="./assets/UI/faq.png" >
+        </td>
+    </tr>
+    
+</table>
+
+---
+
+## 🎯 Future Improvements
+
+* 🔊 Add pronunciation/audio support
+* 📝 Add quizzes and exercises
+* 🌐 Multi-language support
+* 📊 User progress tracking
+
+---
+
+## 👨‍💻 Author
+
+**Atik Hasan Sarker**
+📍 MERN Stack Developer
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
 
